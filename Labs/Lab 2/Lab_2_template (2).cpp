@@ -1,8 +1,8 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} {Coyote ID}
- * {Date}
+ * Lab #2
+ * Nathalie Duran 007664638
+ * 09/29/2023
  * 
  * {Description of lab AKA paraphrase "abstract" section from lab}
  * 
