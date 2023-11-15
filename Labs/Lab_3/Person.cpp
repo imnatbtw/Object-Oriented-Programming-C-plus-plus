@@ -118,8 +118,6 @@ void Person::movedLocation()
 }
 
 
-
-
 /**
  * @brief returns the name of the Person object
  *
