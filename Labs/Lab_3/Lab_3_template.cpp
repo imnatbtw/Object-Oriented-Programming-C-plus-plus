@@ -42,5 +42,9 @@ int main()
     cout << bob.getName() << endl;
     Person unknown = Person(); //Person unknown; // 
     cout << unknown.getName() << endl;
+    cout << "Testing Age\n";
+    cout << bob.getAge() << endl;
+    bob.updateAge(101);
+    cout << bob.getAge() << endl;
 }
 
