@@ -40,11 +40,30 @@ int main()
 {
     Person bob = Person("Bob", 100, "retired", true);
     cout << bob.getName() << endl;
-    Person unknown = Person(); //Person unknown; // 
+    Person unknown = Person(); //Person unknown; //
     cout << unknown.getName() << endl;
-    cout << "Testing Age\n";
+    cout << "Test Age\n"; //function updates age
     cout << bob.getAge() << endl;
     bob.updateAge(101);
     cout << bob.getAge() << endl;
-}
 
+
+    cout << "Test Occupation\n"; // function stats occupation
+    cout << bob.getOccupation() << endl;
+    bob.updateOccupation("Lawyer");
+    cout << bob.getOccupation() << endl;
+
+
+    cout << "Testing lives_in_IE\n"; // function states whether they live in IE or not
+    cout << bob.getLivesInIE() << endl;
+    bob.movedLocation();
+    cout << bob.getLivesInIE() << endl;
+
+
+    cout << "Testing isOlderThan\n"; //function states if bob is older than planty, and their ages
+    cout << bob.getName() << ':' << bob.getAge() << endl;
+    unknown.updateAge(10);
+    unknown.updateName("Planty");
+    cout << unknown.getName() << ':' << unknown.getAge() << endl;
+    cout << bob.isOlderThan(unknown) << endl;
+}

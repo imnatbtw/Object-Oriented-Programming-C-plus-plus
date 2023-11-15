@@ -69,47 +69,120 @@ Person::Person(string name, int age, string occupation, bool lives_in_IE){
     this->lives_in_IE = lives_in_IE;
 }
 
+
+
 /**
  * @brief changes the name into new_name
- * 
- * @param new_name 
+ *
+ * @param new_name
  */
 void Person::updateName(string new_name)
 {
     name = new_name;
 }
 
+
 /**
- * @brief changes if the person is from the IE to not from the IE 
+ * @brief changes the age to new_age
+ *
+ * @param new_age
+ */
+void Person::updateAge(int new_age)
+{
+    age = new_age;
+}
+
+
+/**
+ * @brief changes the occupation to new_occupation
+ *
+ * @param new_occupation;
+ */
+void Person::updateOccupation(string new_occupation)
+{
+    occupation = new_occupation;
+}
+/**
+ * @brief changes if the person is from the IE to not from the IE
  * and vice versa
  * For example, if is_from_IE was true, it is updated to false.
  * If is_from_IE was false, it is updated to true.
  */
 void Person::movedLocation()
 {
-
+    if (lives_in_IE == true){
+        lives_in_IE = false;
+    } else {
+        lives_in_IE = true;
+    }
 }
+
+
 
 
 /**
  * @brief returns the name of the Person object
- * 
- * @return string 
+ *
+ * @return string
  */
-string Person::getName() const{
+string Person::getName() const
+{
     return name;
 }
 
 
 
+
+
+
+
+
+/**
+ * @brief returns age of the Person object
+ *
+ * @return int
+ */
+int Person::getAge() const
+{
+    return age;
+}
+
+
+/**
+ * @brief returns occupation of the person Object
+ *
+ * @return string
+ */
+string Person::getOccupation() const
+{
+    return occupation;
+}
+
+
+/**
+ * @brief returns owhether they live in IE
+ *
+ * @return true : They live in IE
+ * @return false : They dont live in IE
+ */
+bool Person::getLivesInIE() const
+{
+    return lives_in_IE;
+}
+
+
 /**
  * @brief Compares the age of person b with the implicit Person class.
- * 
- * @param b 
+ *
+ * @param b
  * @return true if implicit Person is older than b
  * @return false if implict Person is younger or equal to b
  */
 bool Person::isOlderThan(Person b) const
 {
-    return false; // you should modify this
+    if (age > b.getAge()){
+        return true;
+    } else {
+        return false;
+    }
 }
