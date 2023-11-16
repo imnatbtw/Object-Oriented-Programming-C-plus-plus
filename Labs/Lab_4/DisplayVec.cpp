@@ -20,9 +20,18 @@ void DisplayVec::printVector(const vector<int> v){
     }
 }
 
-
+/**
+ * @brief returns the memory size of the vector
+ * 
+ * @param v 
+ * @return int 
+ */
 int DisplayVec::getVectMemSize(const vector<int> v){
-
+    int mem_size = 0;
+    for(int i = 0; i < v.size(); i++){
+        mem_size += sizeof(v[i]); //mem_size = mem_size + sizeof(v[i]);
+    }
+    return mem_size;
 }
 
 DisplayVec::printMetaVector(const vector<int> v){
