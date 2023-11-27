@@ -6,7 +6,7 @@
  *
  * This lab will show how to derive a class from a base class, where functions and variables are able to be passed
  * down into them. It will also show how virtual and overloaded functions are applied.
- * Finallt, this lab will have UML diagrams that connect classes to visualize the functions and variables.
+ * Finally, this lab will have UML diagrams that connect classes to visualize the functions and variables.
  *
  * The most challenging part was section 7 number 2 and getting it re-compile. I overcame this problem by putting back
  * virtual to virtual void (speak) on Pokemon.h and running it again. After this, I removed it and recomplied by linking 
