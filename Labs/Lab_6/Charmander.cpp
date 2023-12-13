@@ -25,8 +25,8 @@ Charmander::Charmander() : Pokemon() {
  */
 Charmander::Charmander(string name, int hp, int att, int def, vector<string> t) : Pokemon(name, hp, att, def, t) {
     type.push_back("Fire");
-    skills.push_back("Growl");
-    skills.push_back("Scratch");
+    skills.push_back("Flamethrower");
+    skills.push_back("Slash");
 
     cout << "Overloaded Default Constructor (Charmander)\n";
 }
@@ -36,7 +36,7 @@ Charmander::Charmander(string name, int hp, int att, int def, vector<string> t) 
  * 
  */
 void Charmander::speak(){
-    cout << "Charmander-char\n";
+    cout << "Charmeleon-charme\n";
 }
 
 /**
