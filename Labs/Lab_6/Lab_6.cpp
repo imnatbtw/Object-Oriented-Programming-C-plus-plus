@@ -16,6 +16,7 @@
 
 #include <iostream>
 #include "Charmander.h"
+#include "Squirtle.h"
 using namespace std;
 
 int main()
@@ -44,5 +45,31 @@ int main()
     // Charmander
     cout << "\n------- Print Stats---------\n";
     charlie.printStats();
+
+
+    // Squirtle first = Squirtle();
+    pokemonType.push_back("Water");
+
+    cout << "------- Squirtle Constructor Created---------\n";
+    Squirtle squirty = Squirtle("Squirty", 44, 48, 64, pokemonType);
+
+    // Squirtle
+    cout << "\n-------Direct Speak---------\n";
+    squirty.speak();
+    
+    // Pokemon pointer to Squirtle
+    Pokemon * p2 = &squirty ;
+    cout << "\n------- Speak called from Pokemon Pointer---------\n";
+    (*p2).speak();
+
+    // Squirtle pointer to Squirtle
+    Squirtle * c2 = &squirty ;
+    cout << "\n------- Speak called from Squirtle Pointer---------\n";
+    (*c2).speak();
+
+    //  Squirtle
+    cout << "\n------- Print Stats---------\n";
+    squirty.printStats();
+
 }
 
