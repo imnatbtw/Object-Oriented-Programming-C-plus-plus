@@ -20,11 +20,12 @@ int main()
 {
     // initialize arr
     const int CAPACITY = 10;
-    int test_arr[CAPACITY];
+    double test_arr[CAPACITY];
 
+    string data_type = "double";
     //initialize ArrayVec and DisplayArr
-    DisplayArr disp = DisplayArr();
-    ArrayVec av = ArrayVec();
+    DisplayArr<double> disp = DisplayArr<double>(data_type);
+    ArrayVec<double> av = ArrayVec<double>();
 
     // populate with values
     int range = 15;
