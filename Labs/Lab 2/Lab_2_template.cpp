@@ -123,7 +123,7 @@ int main()
     // test input for floor and modulos
     x = 65;
     y = 11;
-    
+
     // floor division
     int dividend = x;
     int divisor = y;
@@ -133,10 +133,10 @@ int main()
     print(op ,floor_div_output, dividend, divisor);
 
     // reset test input for modulos division
-    // The ouputs did not differ when doing Pass by refrence and Pass by Value. What did change was
+    // The outputs did not differ when doing Pass by reference and Pass by Value. What did change was
     // the range in which the output would be in, from 65 to 10.
-    dividend = x;
-    divisor = y;
+    // dividend = x;
+    // divisor = y;
     // modulos division
     int mod_output = modDivision(dividend, divisor);
     //print

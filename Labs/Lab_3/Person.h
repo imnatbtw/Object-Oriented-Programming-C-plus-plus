@@ -28,4 +28,3 @@ class Person{
         bool lives_in_IE;
 };
 #endif
-
