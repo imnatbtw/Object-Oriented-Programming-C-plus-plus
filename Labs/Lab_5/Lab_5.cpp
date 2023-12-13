@@ -66,20 +66,32 @@ int main()
     int arr_n2[BIN_NUM_SIZES]=   {10, 100, 500, 1000, 5000, 10000, 50000, 100000, 200000, \
                             500000, 1000000, 2000000, 5000000, 10000000, 100000000, 500000000};
 
-    // create vector of runs for binarySearch
+   
 
+
+    for(int i = 0; i < BIN_NUM_SIZES; i++) {
+        arr_n2[i] *= 2;
+    }
+    // create vector of runs for binarySearch
+    vector<double>bin_run;
+    SearchAnalysis sa2 = SearchAnalysis();
 
     //create a for loop to go through all the element sizes
     for(int i = 0; i < BIN_NUM_SIZES; i++) {
         // create sa with vectors of up to arr_n[i] elements
+        int n = arr_n2[i];
+        SearchAnalysis sa2 = SearchAnalysis(n, exclusive_range);
 
 
         // record how long binarySearch runs for and append the time to your vector for binarySearch runs
+        double elapsed_bin_time = sa2.runTime(false, elem);
+        bin_run.push_back(elapsed_bin_time);
 
     }
     
     // save the times under BigO_binarySearch.csv
-
+    string filename_bin = "BigO_binarySearch.csv";
+    sa2.writeToFile(filename_bin, bin_run, arr_n2);
 
 }
 
