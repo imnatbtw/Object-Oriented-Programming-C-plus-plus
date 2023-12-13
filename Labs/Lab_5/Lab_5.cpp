@@ -1,13 +1,15 @@
 /***
  * CSE 2010 Fall 2023
- * Lab #{n}
- * {Student Name} #{Coyote ID}
- * {Date}
+ * Lab 5
+ * Nathalie Duran 007664638
+ * 17 November 2023
  *
- * {Description of lab AKA paraphrase "abstract" section from lab}
+ * This lab will show how to iterate through arrays and vectors. This is done to 
+ * search for elements. This lab will also monitor computation time and graph its findings.
+ * Lastly, this lab will allow one to analyze the Big-O time to benchmark the search algorithm
  *
- * {Describe 1) what was most challenging and 2) how you solved/overcame the problem OR
- * the directions of how you PLAN to solve it}
+ * The most challenging part was figuring out how to graph the csv on excel. I solved this problem
+ * by switching to a different way of drawing the graph.
  *
 ***/
 
