@@ -17,12 +17,24 @@
 #include "DisplayArr.h"
 using namespace std;
 int main()
-{
+
     // initialize arr
     const int CAPACITY = 10;
     double test_arr[CAPACITY];
 
     string data_type = "double";
+    // Consolidate the various data types
+    struct dataTypes
+{
+    int array2;
+    int vector2;
+    float array3;
+    float vector3;
+    double array4;
+    double vector4;
+};
+dataTypes dataTypes1;
+
     //initialize ArrayVec and DisplayArr
     DisplayArr<double> disp = DisplayArr<double>(data_type);
     ArrayVec<double> av = ArrayVec<double>();
